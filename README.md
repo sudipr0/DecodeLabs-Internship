@@ -1,6 +1,6 @@
 # DecodeLabs DevOps Engineering Internship — Week 1 Portfolio
 
-Welcome to my official DevOps industrial training workspace. This repository serves as a comprehensive portfolio demonstrating my practical mastery of core systems administration, structured version control workflows, and cloud-managed automation pipelines.
+Welcome to my official DevOps industrial training workspace. This repository serves as a comprehensive portfolio demonstrating my practical mastery of core systems administration, structured version control workflows, containerization strategies, and cloud-managed automation pipelines.
 
 ---
 
@@ -30,7 +30,7 @@ To implement an enterprise-level Software Development Lifecycle (SDLC) workflow,
 
 ---
 
-##  Project 3: The Automated Software Factory (CI/CD Pipeline)
+## Project 3: The Automated Software Factory (CI/CD Pipeline)
 
 ### Objective
 To remove human error and establish a continuous, efficient software delivery engine by replacing manual terminal commands with a digital conveyor belt via GitHub Actions.
@@ -45,10 +45,23 @@ To remove human error and establish a continuous, efficient software delivery en
 
 ---
 
-## Tech Stack Summary
+##  Project 4: Containerization with Docker (Advanced Optional Milestone)
+
+### Objective
+To eliminate the classic environment drift issue ("it works on my machine") by packaging an application and all its system dependencies into an immutable, lightweight container blueprint.
+
+### Implementation Highlights
+* **Application Layering:** Built a standalone Node.js-based micro-server running cleanly inside an isolated space.
+* **Dockerfile Infrastructure:** Written a custom production-ready `Dockerfile` layout to configure execution paths, set workspaces, and minimize image sizes utilizing Alpine Linux bases (`node:18-alpine`).
+* **Network Strategy:** Configured explicit port forwarding parameters (`-p 8080:8080`) allowing the host operating system to cleanly bridge web traffic straight to the isolated cloud engine environment.
+
+---
+
+##  Tech Stack Summary
 * **Operating System:** Linux / Ubuntu
 * **Version Control Hub:** Git / GitHub
 * **Automation Engine:** GitHub Actions (YAML Syntax)
+* **Containerization Platform:** Docker Engine
 
 ---
 
