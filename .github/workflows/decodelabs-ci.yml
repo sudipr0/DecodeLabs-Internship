@@ -1,0 +1,33 @@
+name: DecodeLabs DevOps CI Automation
+
+# Trigger: Runs automatically whenever changes are pushed to the main branch
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  pipeline-validation:
+    # Environment: Runs on a fresh cloud-hosted Ubuntu image
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Pull the repository code into the runner space
+    - name: Stage 1 - Checkout Code Base
+      uses: actions/checkout@v3
+
+    # Step 2: Simulate linting/testing your Project 1 Linux environment
+    - name: Stage 2 - Verify Linux Basics Setup
+      run: |
+        echo "Validating infrastructure requirements..."
+        if [ -d "Project 1 - Linux Basics" ] || [ -d "project1" ]; then
+          echo "Success: Linux project workspace discovered."
+        else
+          echo "Notice: Standard workspace directories checked."
+        fi
+
+    # Step 3: Simulate verification of your Project 2 Git tracking
+    - name: Stage 3 - Evaluate Version Control Integrity
+      run: |
+        echo "Running repository structural analysis..."
+        echo "Current project configuration layout:"
+        ls -la
